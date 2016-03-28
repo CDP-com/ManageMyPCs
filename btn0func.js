@@ -2,6 +2,6 @@
 
 
 var wsh = new ActiveXObject("WScript.Shell");
-wsh.popup( "App Template Message 2!", 5, "App Template Message 2" );
+wsh.popup( "Pick your shared folder function", 5, "Manage My PCs Message 1" );
 
 wsh = null;

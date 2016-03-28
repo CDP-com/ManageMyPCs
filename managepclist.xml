@@ -1,0 +1,37 @@
+<!-- The XML List to Contain Data for Managed PCs -->
+
+<?xml version="1.0" ?>
+<managedpcs> 
+   <pc> 
+       <name>Mary's PC</name> 
+       <dateadded>03/25/2016</dateadded> 
+       <groupname>Group 1</groupname> 
+       <os>Windows 7</os>
+	   <publickey>PUBLIC KEY VALUE</publickey>
+	   <sharedfolder>\%CurrentUser%\CloudDrive\Group1\</sharedfolder>
+	</pc>
+	<pc> 
+       <name>John's PC</name> 
+       <dateadded>03/27/2016</dateadded> 
+       <groupname>Group 1</groupname> 
+       <os>Windows 10</os>
+	   <publickey>PUBLIC KEY VALUE</publickey>
+	   <sharedfolder>\%CurrentUser%\CloudDrive\Group1\</sharedfolder>
+	</pc>	
+	<pc> 
+       <name>Steve's PC</name> 
+       <dateadded>03/26/2016</dateadded> 
+       <groupname>Group 2</groupname> 
+       <os>Windows 10</os>
+	   <publickey>PUBLIC KEY VALUE</publickey>
+	   <sharedfolder>\%CurrentUser%\GoogleDrive\Group2\</sharedfolder>
+	</pc>
+	<pc> 
+       <name>Tina's PC</name> 
+       <dateadded>03/28/2016</dateadded> 
+       <groupname>Group 2</groupname> 
+       <os>Windows 8</os>
+	   <publickey>PUBLIC KEY VALUE</publickey>
+	   <sharedfolder>\%CurrentUser%\GoogleDrive\Group2\</sharedfolder>
+	</pc>	
+</managedpcs>

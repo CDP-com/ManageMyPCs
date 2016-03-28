@@ -36,6 +36,7 @@
 <!-- ************************************************ -->  
 <link rel="stylesheet" type="text/css" media="all" href="app-style.css"/>  
 <script type="text/javascript" src="app-lib.js"></script>
+<script type="text/javascript" src="managepclist.js"></script>
 <!-- ************************************************ -->  
 <!--               END: App Script Files              -->
 <!-- ************************************************ -->
@@ -67,7 +68,7 @@ document.title = apptitle + " | SnapBack Apps";
 </script>
 <script type="text/javascript">
 	// Temporary Solution to Setting the Initial Permissions
-	var ManifestURL_Local = "%ALLUSERSPROFILE%\\cdp\\snapback\\apps\\apptemplate\\apptemplate.xml";
+	var ManifestURL_Local = "%ALLUSERSPROFILE%\\cdp\\snapback\\apps\\ManageMyPCs\\managemypcs.xml";
 	// Check to see if User is admin 
 	
 	// globals
@@ -240,7 +241,7 @@ document.title = apptitle + " | SnapBack Apps";
 
 		<h2>Manage Multple PCs Safely and Securely</h2>
 	
-		<p>Manage all your PCs securely, just by using any shared folder with SnapBack Apps.  Push any changes or policies out to manage one, or hundreds of PCs at home and work.  Write your own apps, which are securely shared with your users and securely scheduled to run.</p>  
+		<p>Manage all your PCs securely, just by using any shared folder with SnapBack Apps.  Push out any changes or policies to manage your PCs, from a single PC up to hundreds them at home or at work.  Write your own apps, share them, schedule them, and run them securely.</p>  
  
 		<p>Setup is easy, fast, and secure, even if your shared folder isn't.
 		
@@ -251,13 +252,24 @@ document.title = apptitle + " | SnapBack Apps";
 		<!-- ************************************************ -->
 		<!--                 END: Button Table                -->
 		<!-- ************************************************ -->
-			
+		
+		<h3>PCs Ready to be Managed</h3>
+		<p>Below is a list of PCs which have been configured to be managed by this administrator accout.  A job list signed for a specific group will be pushed to the PCs managed under that group.*</p>
+		
+		<!-- ************************************************ -->
+		<!--     START: List of Managed PCs - DO NOT EDIT     -->
+		<!-- ************************************************ -->
+		<div id="managed_list_xml_div"></div>
+		<!-- ************************************************ -->
+		<!--             END: List of Managed PCs             -->
+		<!-- ************************************************ -->
+		
+		<p style="font-size: 12px;">* Note: This is a sample list</p>
+		
 	</div><!--End Tab1-->
 	
 	<div id="tab2">
 	
-		<p class="developers-message">[To the Developer - Use this section to describe in greater technical detail how your app works]</p>
-		
 		<!-- ************************************************************ -->
 		<!--  START: Button Permissions Table - DO NOT EDIT THIS SECTION  -->
 		<!-- ************************************************************ -->	
@@ -275,11 +287,30 @@ document.title = apptitle + " | SnapBack Apps";
 		<!--           Below is the standard technical details instructions           -->
 		<!-- Remove and include your app's individual technical details in plain HTML -->
 		<!-- ************************************************************************ -->
-		<script type="text/javascript">CreateStandardTechnical();</script>
+		<h3>Technical Details</h3>
+		<p>The "Manage My PCs" app works to (1) set up a list of PCs you wish to manage from a single administration machine, (2) create a job list that can be pushed to each of the manached machines, and (3) securely ensure that each machine safely runs the desired job list.  For more information on each individual aspect, please see the details below:</p>
 		
+		<h4>Setup</h4>
+		<p>Setup includes two primary components including (1) selecting a shared drive for which SnapBack Apps can write a job list to and (2) creating a custom SnapBack Apps installer which will use this shared drive location as a predetermined variable for all of the machines you wish to manage from the location. <a class="viewmore" href="#" rel="#viewmore_setup">View More</a></p>
+		<div id="viewmore_setup" class="viewmorediv" style="display: none;">
+			<p>Selecting the shared location is as simple as clicking on the "Pick Your Shared Folder" button and navigating to the right folder location.</p>
+			<p>Once this is completed, click on the "Create a Personalized Installer" button which, using the location you selected, creates an installer for you to use.  Simply run this installer on every machine you wish to have managed from the specified location.</p>
+		</div>
 		
+		<h4>Creating and Editing a Job List</h4>
+		<p>Job lists are organized actions you wish you to run, either on your local machine or on the PCs you manage.  To effectively manage multiple PCs, you first need to create a job list and then subsequently edit it to ensure you want to run each task on a given set of PCs. <a class="viewmore" href="#" rel="#viewmore_create">View More</a></p>
+		<div id="viewmore_create" class="viewmorediv" style="display: none;">
+			<p>Creating a job list is as simple as clicking an icon next to each SnapBack Apps button.  In each app, you will find the "Add this Button to your Job List" icon.  Clicking on this adds that specific button to a running list of tasks you wish to eventually run.</p>
+			<p>Editing your current job list involves clicking on the "Edit Your Job List" button in this app, which will allow you to edit a comma separated list of the buttons you have previously selected.  Delete or otherwise modify any tasks from this list.</p>
+		</div>
 		
-		
+		<h4>Pushing a Job List to Multiple Machines</h4>
+		<p>Pushing a job list involves signing that list as created by your administration machine and then placing it in the shared folder previously selected from which your PCs will read from and subsequently run. <a class="viewmore" href="#" rel="#viewmore_push">View More</a></p>
+		<div id="viewmore_push" class="viewmorediv" style="display: none;">
+			<p>Simply clicking on the "Sign & Push Your Job List" button will both sign and place your job list file in the shared folder you've selected.</p>
+			<p>Once your job list is in this location, each PC you have setup with your personalized installer will read the file and run each of the buttons specified.</p>
+		</div>
+	
 		<!-- ******************************************************* -->
 		<!--  START: Source Code Display - DO NOT EDIT THIS SECTION  -->
 		<!-- ******************************************************* -->	

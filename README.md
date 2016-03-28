@@ -17,4 +17,6 @@ Add any notes you may find pertinent
 Changelog
 
 ----
+03/28/2016, smadara, Added content to main.html, Added functionality to read in a xml file as a list of managed PCs, Changed default scripts
+
 03/25/2016, smadara, Initial Commit

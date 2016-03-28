@@ -1,6 +1,6 @@
 //***** Use this file to set up your buttons and include any custom functions for your app *****
 // 
-var development = 1;						// 1 this app is in development, 0 this app is in production
+var development = 0;						// 1 this app is in development, 0 this app is in production
 //var currentUserDefaultCaution = "0";		// **This is the global Throw caution to the wind flag for the current use
 
 /*-----------------------------------------------------*/
@@ -23,8 +23,8 @@ var btn0_Title = "Pick Your Shared Folder";		// This is what is displayed on the
 var btn0_MouseOver = "The first step involves selecting which shared folder you would like your job list written to.  Click this button to select that folder.";	// This is what appears upon mouseover for the button.
 var btn0_Description = "<strong>Step 1:</strong> Pick the shared folder you'd like to use.  This can be any shared folder including Dropbox, Google Drive, SugarSync, Box, OneDrive, and any Windows Networks.";		// This is what is displayed as the description of the button.
 var btn0_Why = "This is an example explanation of why someone would want to run this button.  For example, you would want to run this specific button to see how our apps are demonstrated. You can even include links such as <a href='http://www.google.com/' id='btn0-link' title='This is a link to Google'>this</a> to help provide greater context for a user.";		// Use this to explain to an end user why they would want to run this button.
-var btn0_Command = "displaymessage0.js";	// This is the actual script the button will be calling.
-var btn0_Source = "displaymessage0.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
+var btn0_Command = "btn0func.js";	// This is the actual script the button will be calling.
+var btn0_Source = "btn0func.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
 var btn0_CommandParms = "";                 // Add any parameters if and only if your command receives them.
 var btn0_id="btn0";							// The unique ID of the button.  Please follow the format provided.
 
@@ -58,8 +58,8 @@ var btn1_Title = "Create a Personalized Installer";		// This is what is displaye
 var btn1_MouseOver = "The second step includes creating a customized installer with the details of your shared environment already stored.";	// This is what appears upon mouseover for the button.
 var btn1_Description = "<strong>Step 2:</strong> Create a custom installable version of SnapBack, which contains the credentials stored on this PC for you as an Administrator.  Simply run this installer on all the PCs you intend to manage.";		// This is what is displayed as the description of the button.
 var btn1_Why = "The explaination for why someone would want to run this button.";		// Use this to explain to an end user why they would want to run this button.
-var btn1_Command = "displaymessage1.js";	// This is the actual script the button will be calling.
-var btn1_Source = "displaymessage1.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
+var btn1_Command = "btn1func.js";	// This is the actual script the button will be calling.
+var btn1_Source = "btn1func.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
 var btn1_CommandParms = "";                 // Add any parameters if and only if your command receives them.
 var btn1_id="btn1";							// The unique ID of the button.  Please follow the format provided.
 
@@ -93,8 +93,8 @@ var btn2_Title = "Edit Your Job List";		// This is what is displayed on the butt
 var btn2_MouseOver = "The third step includes editing your job list and ensuring that everything matches with what you want to run.";	// This is what appears upon mouseover for the button.
 var btn2_Description = "<strong>Step 3:</strong> Now that you are set up to manage your PCs, you can add eligible jobs and tasks to be executed on your PC from any SnapBack App.  We have already added a few eligible app jobs for you.  Edit your current Task-list in any Excel compatible Spreadsheet or modify the XML file directly.";		// This is what is displayed as the description of the button.
 var btn2_Why = "The explaination for why someone would want to run this button.";		// Use this to explain to an end user why they would want to run this button.
-var btn2_Command = "displaymessage1.js";	// This is the actual script the button will be calling.
-var btn2_Source = "displaymessage1.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
+var btn2_Command = "btn2func.js";	// This is the actual script the button will be calling.
+var btn2_Source = "btn2func.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
 var btn2_CommandParms = "";                 // Add any parameters if and only if your command receives them.
 var btn2_id="btn2";							// The unique ID of the button.  Please follow the format provided.
 
@@ -128,8 +128,8 @@ var btn3_Title = "Sign & Push Your Jobs";		// This is what is displayed on the b
 var btn3_MouseOver = "The fourth step includes signing your jobs and pushing them to your selected shared folder.  This then allows other PCs to run your job list.";	// This is what appears upon mouseover for the button.
 var btn3_Description = "<strong>Step 4:</strong> Sign & push your job list.  This ensures that your PCs will listen to and run only the jobs you have approved.";		// This is what is displayed as the description of the button.
 var btn3_Why = "The explaination for why someone would want to run this button.";		// Use this to explain to an end user why they would want to run this button.
-var btn3_Command = "displaymessage1.js";	// This is the actual script the button will be calling.
-var btn3_Source = "displaymessage1.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
+var btn3_Command = "btn3func.js";	// This is the actual script the button will be calling.
+var btn3_Source = "btn3func.txt";    // Duplicate the above script as a .txt file so that the source code can be shown on the How it Works tab.
 var btn3_CommandParms = "";                 // Add any parameters if and only if your command receives them.
 var btn3_id="btn3";							// The unique ID of the button.  Please follow the format provided.
 
@@ -161,8 +161,5 @@ var btn3_ScriptHasUI=0;                    	// Does the script have an UI? Neede
 /*----------------- Custom Functions ------------------*/
 /*-----------------------------------------------------*/	
 //***** Use the below area for your common functions *****
-
-
-
 
 
